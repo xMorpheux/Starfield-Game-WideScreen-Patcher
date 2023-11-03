@@ -27,7 +27,7 @@ namespace StarfieldWideScreenPatcher
         {
             if(txtEditor.Text.Contains("Starfield.exe"))
             {
-                byte[] originalBytes = { 0x8E, 0xE3, 0x18, 0x40 };
+                byte[] originalBytes = { 0x26, 0xB4, 0x17, 0x40 };
                 byte[] replacementBytes = { 0x39, 0x8E, 0x63, 0x40 };
 
                 byte[] fileBytes = File.ReadAllBytes(txtEditor.Text);
@@ -60,7 +60,7 @@ namespace StarfieldWideScreenPatcher
         {
             if (txtEditor.Text.Contains("Starfield.exe"))
             {
-                byte[] originalBytes = { 0x39, 0x8E, 0x63, 0x40 };
+                byte[] originalBytes = { 0x26, 0xB4, 0x17, 0x40 };
                 byte[] replacementBytes = { 0x8E, 0xE3, 0x18, 0x40 };
 
                 byte[] fileBytes = File.ReadAllBytes(txtEditor.Text);
